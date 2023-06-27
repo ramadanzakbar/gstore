@@ -15,16 +15,15 @@
 						</div>
 						<div class="form-group">
 							<label>Your Name</label>
-							<input type="text" class="form-control" name="invoice" value="<?= $order['name'] ?>" readonly>
+							<input type="text" class="form-control" name="account_name" value="<?= $order['name'] ?>" readonly>
 						</div>
 						<div class="form-group">
 							<label>Your Address</label>
-							<input type="text" class="form-control" name="invoice" value="<?= $order['address'] ?>" readonly>
+							<input type="text" class="form-control" name="account_number" value="<?= $order['address'] ?>" readonly>
 						</div>
 						<div class="form-group">
 							<label>Your Payment</label>
-					<form action="<?= base_url('cart/add') ?>" method="POST">
-							<input type="text" class="form-control" name="invoice" value="<?= number_format($order['total'], 2, ', ','.'); ?>" readonly>
+							<input type="text" class="form-control" name="nominal" value="<?= $order['total']?>" readonly>
 						</div>
 						<div class="form-group">
 							<label>Note</label>

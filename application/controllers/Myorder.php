@@ -33,7 +33,7 @@ class Myorder extends CI_Controller {
 		$this->form_validation->set_rules('account_name', 'Acoount name', 'required',[
 			'required' => 'Acoount name is required.',
 		]);
-		$this->form_validation->set_rules('account_number', 'Account number', 'required|numeric',[
+		$this->form_validation->set_rules('account_number', 'Account number', 'required',[
 			'required' => 'Account number is required.',
 			'numerin'	=> 'Account number must number.'
 		]);
